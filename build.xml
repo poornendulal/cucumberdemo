@@ -17,6 +17,7 @@
         <pathelement location="jars/cucumber-core-1.2.2.jar"/>
         <pathelement location="jars/cucumber-junit-1.2.2.jar"/>
         <pathelement location="jars/selenium-server-standalone-3.11.0.jar"/>
+        <pathelement location="jars/cucumber-html-0.2.6.jar"/>
     </path>
     <path id="run.Test.classpath">
         <path refid="cucumberdemo.classpath"/>
@@ -30,6 +31,7 @@
         <pathelement location="jars/cucumber-core-1.2.2.jar"/>
         <pathelement location="jars/cucumber-junit-1.2.2.jar"/>
         <pathelement location="jars/selenium-server-standalone-3.11.0.jar"/>
+        <pathelement location="jars/cucumber-html-0.2.6.jar"/>
     </path>
     <path id="run.TestRunner.classpath">
         <path refid="cucumberdemo.classpath"/>
@@ -43,6 +45,7 @@
         <pathelement location="jars/cucumber-core-1.2.2.jar"/>
         <pathelement location="jars/cucumber-junit-1.2.2.jar"/>
         <pathelement location="jars/selenium-server-standalone-3.11.0.jar"/>
+        <pathelement location="jars/cucumber-html-0.2.6.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -84,7 +87,7 @@
             <classpath refid="run.Test.classpath"/>
         </java>
     </target>
-    <target name="TestRunner">
+    <target name="TestRunner" depends="build">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
