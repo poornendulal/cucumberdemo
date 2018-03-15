@@ -2,6 +2,7 @@ package stepdefinition;
 
 import java.util.logging.Level;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -39,6 +40,7 @@ public class TestStep {
 		String[] testdata = { "seconds"};
 		Automation automate = new Automation();
 		automate.run(driver, operation, control, testdata);
+		Assert.fail();
 		driver.quit();
 	}
 }
