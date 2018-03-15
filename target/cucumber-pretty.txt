@@ -1,6 +1,0 @@
-Feature: To demo cucumber
-
-  Scenario: Open google and search text and verify seconds are displayed on top of the search result [90m# login.feature:2[0m
-    [32mGiven [0m[32mopen the browser[0m                                                                           [90m# TestStep.open_the_browser()[0m
-    [32mWhen [0m[32msearched anything[0m                                                                           [90m# TestStep.searched_anything()[0m
-    [32mThen [0m[32mverify seconds displayed[0m                                                                    [90m# TestStep.verify_seconds_displayed()[0m

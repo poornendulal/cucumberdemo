@@ -6,9 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "features", glue = { "stepdefinition" }, snippets = SnippetType.CAMELCASE, plugin = {
-		"pretty:target/cucumber-pretty.txt", "html:target/cucumber-html-report", "json:target/cucumber.json",
-		"junit:target/cucumber-results.xml" })
+@CucumberOptions(features = "features", glue = { "stepdefinition" }, snippets = SnippetType.CAMELCASE,  plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"})
 public class TestRunner {
 
 }

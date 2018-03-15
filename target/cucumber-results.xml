@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="4.179218">
-<testcase classname="To demo cucumber" name="Open google and search text and verify seconds are displayed on top of the search result" time="4.179218">
-<system-out><![CDATA[Given open the browser......................................................passed
-When searched anything......................................................passed
-Then verify seconds displayed...............................................passed
-]]></system-out>
-</testcase>
-</testsuite>
