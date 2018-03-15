@@ -40,5 +40,6 @@
 	<classpathentry kind="lib" path="jars/cucumber-core-1.2.2.jar"/>
 	<classpathentry kind="lib" path="jars/cucumber-junit-1.2.2.jar"/>
 	<classpathentry kind="lib" path="jars/selenium-server-standalone-3.11.0.jar"/>
+	<classpathentry kind="lib" path="jars/cucumber-html-0.2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
